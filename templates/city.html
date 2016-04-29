@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block body %}
+  <h1>Nearest Cities</h1>
+
+  <form action="bydistpage" method=POST>
+    
+    <p><input type=submit value="Search by Distance Radius" ></p>
+  </form>
+  
+  <form action="nearestpage" method=POST>
+    
+    <p><input type=submit value="Find n nearest Cities "></p>
+  </form>
+  
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block body %}
+  <h1>Nearest Cities</h1>
+
+  <form action="" method=POST>
+    <dl>
+      <dt>City
+      <dd><input type=text name=city value="{{
+          request.form.city }}">
+        <dt>No of cities closer to the city
+        <dd><input type=text name=numberofcities value="{{
+          request.form.numberofcities }}">
+          </dl>
+    <p><input type=submit value=Find Cities ></p>
+  </form>
+{% endblock %}
